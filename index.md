@@ -1,6 +1,3 @@
-## Code examples
-
-- [TextFile class](https://github.com/marskar/biof309_fall2018/zen/zen.nb.html)
 
 ## Host your HTML slides on GitHub pages
 

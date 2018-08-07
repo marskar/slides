@@ -1,1 +1,3 @@
-# biof309_fall2018
+# How to make HTML slide decks
+
+go to marskar.github.io/slides
