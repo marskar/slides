@@ -16,14 +16,12 @@ Once you have [Anaconda](https://conda.io/docs/glossary.html#anaconda-glossary) 
 
 ```
 pandoc -t dzslides -s habits.md -o pandoc/dzslides-pandoc.html
-pandoc -t revealjs -s habits.md -o pandoc/revealjs-pandoc.html -V revealjs-url=http://lab.hakim.se/reveal-js
 pandoc -t slidy -s habits.md -o pandoc/slidy-pandoc.html
 ```
 
 Examples:
 
 - [dzslides](/slides/pandoc/dzslides-pandoc.html)
-- [dzslides](/slides/pandoc/document.html)
 - [slidy](/slides/slides/slidy-pandoc.html)
 
 ## Knit slides from md or Rmd to HTML in [RStudio](https://rmarkdown.rstudio.com/lesson-11.html) or from the command-line
