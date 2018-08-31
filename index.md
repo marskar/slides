@@ -22,6 +22,7 @@ pandoc -t slidy --self-contained -s habits.md -o pandoc/slidy-pandoc.html
 Examples:
 
 - [dzslides](/slides/pandoc/dzslides-pandoc.html)
+- [rev](/slides/myslides.html)
 - [slidy](/slides/pandoc/slidy-pandoc.html)
 
 ## Knit slides from md or Rmd to HTML in [RStudio](https://rmarkdown.rstudio.com/lesson-11.html) or from the command-line
