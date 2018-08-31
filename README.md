@@ -1,10 +1,12 @@
 ## Host your HTML slides on GitHub pages
 
-The goal is put slides up on the web, so you can share a url, instead of resorting to email or transferring files using USB drives.
+The goal of this tutorial is to demonstrate how to make HTML slidedecks that can be put on the web.
 
-Google Slides can accomplish this goal, but I would recommend you try to generate slides programmatically using the steps below.
+One major advantage of this is that you can share a url, instead of resorting to email or transferring files using USB drives.
 
-Check out the rendered examples at marskar.github.io/slides.
+Instead of using Powerpoint, Keynote, or Google Slides, I recommend you try to generate slides programmatically using the steps below.
+
+Check out the rendered examples at [https://marskar.github.io/slides/](https://marskar.github.io/slides/).
 
 ### Create HTML slides from markdown using [Pandoc](http://pandoc.org/MANUAL.html#producing-slide-shows-with-pandoc)
 
