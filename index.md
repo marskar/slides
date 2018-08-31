@@ -15,8 +15,8 @@ There are many ways to install Pandoc, but I recommend to use [Anaconda](https:/
 Once you have [Anaconda](https://conda.io/docs/glossary.html#anaconda-glossary) or [Miniconda](https://conda.io/docs/glossary.html#miniconda-glossary) installed, you can install pandoc using this command-line command `conda install -yc conda-forge pandoc` and then run the one of the options below:
 
 ```
-pandoc -t dzslides -s habits.md -o pandoc/dzslides-pandoc.html
-pandoc -t slidy -s habits.md -o pandoc/slidy-pandoc.html --self-contained
+pandoc -t dzslides --self-contained -s habits.md -o pandoc/dzslides-pandoc.html
+pandoc -t slidy --self-contained -s habits.md -o pandoc/slidy-pandoc.html
 ```
 
 Examples:
