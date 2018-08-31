@@ -55,10 +55,10 @@ Rscript -e "rmarkdown::render('xaringan.Rmd', output_file = 'r/xaringan.html')"
 ```
 
 Examples:
-- [ioslides](/biof309_fall2018/slides/r/ioslides.html)
-- [slidy](/biof309_fall2018/slides/r/slidy.html)
-- [revealjs](/biof309_fall2018/slides/r/revealjs.html)
-- [xaringan](/biof309_fall2018/slides/r/xaringan.html)
+- [ioslides](/slides/r/ioslides.html)
+- [slidy](/slides/r/slidy.html)
+- [revealjs](/slides/r/revealjs.html)
+- [xaringan](/slides/r/xaringan.html)
 
 ## Create HTML slides from ipynb using [nbconvert](https://nbconvert.readthedocs.io/en/latest/) from the command-line
 
@@ -73,7 +73,7 @@ jupyter nbconvert revealjs.ipynb --to slides --reveal-prefix=$url
 
 Example with instructions for creating slides in JupyterLab:
 
-- [revealjs](/biof309_fall2018/slides/revealjs.slides.html)
+- [revealjs](/slides/revealjs.slides.html)
 
 Exporting slides from JupyterLab does not work (great) right now.
 It requires some [additional setup](https://github.com/jupyterlab/jupyterlab/issues/4067).
