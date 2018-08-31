@@ -16,7 +16,7 @@ Once you have [Anaconda](https://conda.io/docs/glossary.html#anaconda-glossary) 
 
 ```
 pandoc -t dzslides -s habits.md -o pandoc/dzslides-pandoc.html
-pandoc -t slidy -s habits.md -o pandoc/slidy-pandoc.html
+pandoc -t slidy -s habits.md -o pandoc/slidy-pandoc.html --self-contained
 ```
 
 Examples:
