@@ -24,7 +24,7 @@ Examples:
 
 - [dzslides](/slides/pandoc/dzslides-pandoc.html)
 - [revealjs](/slides/pandoc/revealjs-pandoc.html)
-- [slidy](/slides/pandoc/slidy-pandoc.html)
+- [slidy](/slides/slides/slidy-pandoc.html)
 
 ## Knit slides from md or Rmd to HTML in [RStudio](https://rmarkdown.rstudio.com/lesson-11.html) or from the command-line
 
