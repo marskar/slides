@@ -22,9 +22,9 @@ pandoc -t slidy -s habits.md -o pandoc/slidy-pandoc.html
 
 Examples:
 
-- [dzslides](/biof309_fall2018/slides/pandoc/dzslides-pandoc.html)
-- [revealjs](/biof309_fall2018/slides/pandoc/revealjs-pandoc.html)
-- [slidy](/biof309_fall2018/slides/pandoc/slidy-pandoc.html)
+- [dzslides](/slides/pandoc/dzslides-pandoc.html)
+- [revealjs](/slides/pandoc/revealjs-pandoc.html)
+- [slidy](/slides/pandoc/slidy-pandoc.html)
 
 ## Knit slides from md or Rmd to HTML in [RStudio](https://rmarkdown.rstudio.com/lesson-11.html) or from the command-line
 
@@ -55,9 +55,9 @@ Rscript -e "rmarkdown::render('xaringan.Rmd', output_file = 'r/xaringan.html')"
 ```
 
 Examples:
-- [ioslides](/slides/r/ioslides.html)
-- [slidy](/slides/r/slidy.html)
-- [revealjs](/slides/r/revealjs.html)
+- [ioslides](/slides/r/ioslides-r.html)
+- [slidy](/slides/r/slidy-r.html)
+- [revealjs](/slides/r/revealjs-r.html)
 - [xaringan](/slides/r/xaringan.html)
 
 ## Create HTML slides from ipynb using [nbconvert](https://nbconvert.readthedocs.io/en/latest/) from the command-line
