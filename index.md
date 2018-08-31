@@ -69,6 +69,8 @@ url="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.5.0"
 jupyter nbconvert revealjs.ipynb --to slides --reveal-prefix=$url
 ```
 
+Example with instructions creating slides in JupyterLab:
+
 - [revealjs](/biof309_fall2018/slides/revealjs.slides.html)
 
 Exporting slides from JupyterLab does not work (great) right now.
