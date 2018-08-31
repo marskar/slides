@@ -60,7 +60,7 @@ Examples:
 - [revealjs](/biof309_fall2018/slides/r/revealjs.html)
 - [xaringan](/biof309_fall2018/slides/r/xaringan.html)
 
-### Create HTML slides from ipynb using [nbconvert](https://nbconvert.readthedocs.io/en/latest/) from the command-line as below:
+### Create HTML slides from ipynb using [nbconvert](https://nbconvert.readthedocs.io/en/latest/) from the command-line
 
 You can also create slides from a Jupyter Notebook using `jupyter nbconvert`.
 
