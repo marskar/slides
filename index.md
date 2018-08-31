@@ -6,7 +6,7 @@ One major advantage of this is that you can share a url, instead of resorting to
 
 Instead of using Powerpoint, Keynote, or Google Slides, I recommend you try to generate slides programmatically using the steps below.
 
-### Create HTML slides from markdown using [Pandoc](http://pandoc.org/MANUAL.html#producing-slide-shows-with-pandoc)
+### Create HTML slides from markdown (md) using [Pandoc](http://pandoc.org/MANUAL.html#producing-slide-shows-with-pandoc)
 
 The easiest way to create a slideshow is to write a simple markdown file, like `habits.md`, and use Pandoc to convert it to one of the possible HTML formats.
 
