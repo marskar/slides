@@ -22,6 +22,7 @@ pandoc -t slidy -s habits.md -o pandoc/slidy-pandoc.html
 Examples:
 
 - [dzslides](/slides/pandoc/dzslides-pandoc.html)
+- [dzslides](/slides/pandoc/revealjs-pandoc.html)
 - [slidy](/slides/pandoc/slidy-pandoc.html)
 
 ## Knit slides from md or Rmd to HTML in [RStudio](https://rmarkdown.rstudio.com/lesson-11.html) or from the command-line
