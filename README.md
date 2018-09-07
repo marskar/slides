@@ -11,11 +11,11 @@ Instead of using Powerpoint, Keynote, or Google Slides, I recommend you try to g
 Speaking of Powerpoint, I suggest that you avoid the horrors of Microsoft Office entirely.
 - Instead of using Microsoft Word & Powerpoint and the doc(x) & ppt(x) formats, write documents and [slideshows](https://marskar.github.io/slides/) in [Markdown](https://www.markdownguide.org/) format and then converted into the desired output format using one of the three options below:
     1. [Pandoc](https://pandoc.org/) or [Pypandoc](https://github.com/bebraw/pypandoc) (recommended for users of the [Python programming language](https://www.python.org/) and those comfortable using the [command line](https://en.wikipedia.org/wiki/Command-line_interface))
-    2. [RStudio](https://www.rstudio.com/products/rstudio/download/) (recommended for users of the [R programming language](https://www.r-project.org/))
+    2. [RStudio](https://www.rstudio.com/products/rstudio/download/) or the [rmarkdown R package](https://github.com/rstudio/rmarkdown) (recommended for users of the [R programming language](https://www.r-project.org/))
     3. [JupyterLab](https://jupyterlab.readthedocs.io/en/stable/) (or the classic [Jupyter Notebook](https://jupyterlab.readthedocs.io/en/stable/getting_started/starting.html))
 - Instead of using Microsoft Excel and the xls(x) format, save tabular data as comma-separated value (csv) files. [PyCharm](https://www.jetbrains.com/pycharm/features/), [RStudio](https://www.rstudio.com/products/rstudio/download/) and [JupyterLab](https://jupyterlab.readthedocs.io/en/stable/) all have csv viewers. These csv viewers are better options for looking at data than Excel, because they do not have the ability to edit or auto-format your raw data. [Tables that are meant to be displayed in documents](https://www.markdownguide.org/extended-syntax/#tables) can also be written in [Markdown](https://www.markdownguide.org/) format instead of in Excel.
 
-## Create HTML slides from markdown (md) using [Pandoc](http://pandoc.org/MANUAL.html#producing-slide-shows-with-pandoc) and [Pypandoc](https://github.com/bebraw/pypandoc)
+## Create HTML slides from markdown (md) using [Pandoc](http://pandoc.org/MANUAL.html#producing-slide-shows-with-pandoc) or [Pypandoc](https://github.com/bebraw/pypandoc)
 
 The easiest way to create a slideshow is to write a simple markdown file, like `habits.md`, and use [Pandoc](http://pandoc.org/MANUAL.html#producing-slide-shows-with-pandoc) to convert it to one of the possible HTML formats.
 
@@ -34,7 +34,7 @@ Instead of using [Pandoc](http://pandoc.org/MANUAL.html#producing-slide-shows-wi
 - Pro-tip 2: If you create a new Python scratch file in [PyCharm](https://www.jetbrains.com/pycharm/features/) (Press Ctrl/Cmd+Shift+N, then Enter) and change the extension from `.py` to `.md`, PyCharm will continue to treat the file like a Python script giving you the ability to run code in your [Markdown](https://www.markdownguide.org/) document! As soon as you take the file out of the Scratches folder, [PyCharm](https://www.jetbrains.com/pycharm/features/) will treat it like a [Markdown](https://www.markdownguide.org/) file again! In short, [PyCharm](https://www.jetbrains.com/pycharm/features/) will auto-detect the file type based on its extension, but this does not apply to scratch files!
 - Pro-tip 3: To get automatic python syntax highlighting in your [Markdown](https://www.markdownguide.org/) documents on [GitHub](https://github.com/) and in [slideshows](https://marskar.github.io/slides/) created from [Markdown](https://www.markdownguide.org/) files, put three backticks (\`) followed by the word "python" above your code and then a new line below your code put another three backticks (\`). This is called a [code block](https://pandoc.org/MANUAL.html#fenced-code-blocks) in [Markdown](https://www.markdownguide.org/).
 
-Examples:
+### Examples of HTML slides created using [Pandoc](http://pandoc.org/MANUAL.html#producing-slide-shows-with-pandoc) or [Pypandoc](https://github.com/bebraw/pypandoc):
 
 - [dzslides](/slides/pandoc/dzslides-pandoc.html)
 - [slidy](/slides/pandoc/slidy-pandoc.html)
@@ -67,7 +67,7 @@ Rscript -e "rmarkdown::render('revealjs.Rmd', output_file = 'r/revealjs-r.html')
 Rscript -e "rmarkdown::render('xaringan.Rmd', output_file = 'r/xaringan.html')"
 ```
 
-Examples:
+### Examples of HTML slides created using [RStudio](https://www.rstudio.com/products/rstudio/download/) or the [rmarkdown R package](https://github.com/rstudio/rmarkdown):
 - [ioslides](/slides/r/ioslides-r.html)
 - [slidy](/slides/r/slidy-r.html)
 - [revealjs](/slides/r/revealjs-r.html)
@@ -84,7 +84,7 @@ url="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.5.0"
 jupyter nbconvert revealjs.ipynb --to slides --reveal-prefix=$url
 ```
 
-Example with instructions for creating slides in JupyterLab:
+### An example with instructions for creating slides in JupyterLab:
  - [revealjs](/slides/revealjs.slides.html)
 
 Exporting slides from JupyterLab does not work (great) right now.
