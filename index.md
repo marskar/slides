@@ -34,6 +34,11 @@ Instead of using [Pandoc](http://pandoc.org/MANUAL.html#producing-slide-shows-wi
 - Pro-tip 2: If you create a new Python scratch file in [PyCharm](https://www.jetbrains.com/pycharm/features/) (Press Ctrl/Cmd+Shift+N, then Enter) and change the extension from `.py` to `.md`, PyCharm will continue to treat the file like a Python script giving you the ability to run code in your [Markdown](https://www.markdownguide.org/) document! As soon as you take the file out of the Scratches folder, [PyCharm](https://www.jetbrains.com/pycharm/features/) will treat it like a [Markdown](https://www.markdownguide.org/) file again! In short, [PyCharm](https://www.jetbrains.com/pycharm/features/) will auto-detect the file type based on its extension, but this does not apply to scratch files!
 - Pro-tip 3: To get automatic python syntax highlighting in your [Markdown](https://www.markdownguide.org/) documents on [GitHub](https://github.com/) and in [slideshows](https://marskar.github.io/slides/) created from [Markdown](https://www.markdownguide.org/) files, put three backticks (\`) followed by the word "python" above your code and then a new line below your code put another three backticks (\`). This is called a [code block](https://pandoc.org/MANUAL.html#fenced-code-blocks) in [Markdown](https://www.markdownguide.org/).
 
+Examples:
+
+- [dzslides](/slides/pandoc/dzslides-pandoc.html)
+- [slidy](/slides/pandoc/slidy-pandoc.html)
+
 ## Knit slides from md or Rmd to HTML in [RStudio](https://rmarkdown.rstudio.com/lesson-11.html) or from the command-line
 
 First, you will need to install R. Again, I recommend installing [Anaconda or Miniconda](https://docs.anaconda.com/anaconda/install/) and then running `conda install -yc r r-essentials`.
@@ -62,6 +67,12 @@ Rscript -e "rmarkdown::render('revealjs.Rmd', output_file = 'r/revealjs-r.html')
 Rscript -e "rmarkdown::render('xaringan.Rmd', output_file = 'r/xaringan.html')"
 ```
 
+Examples:
+- [ioslides](/slides/r/ioslides-r.html)
+- [slidy](/slides/r/slidy-r.html)
+- [revealjs](/slides/r/revealjs-r.html)
+- [xaringan](/slides/r/xaringan.html)
+
 ## Create HTML slides from ipynb using [nbconvert](https://nbconvert.readthedocs.io/en/latest/) from the command-line
 
 You can also create slides from a Jupyter Notebook using `jupyter nbconvert`.
@@ -72,6 +83,9 @@ If you have [Anaconda](https://conda.io/docs/glossary.html#anaconda-glossary) in
 url="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.5.0"
 jupyter nbconvert revealjs.ipynb --to slides --reveal-prefix=$url
 ```
+
+Example with instructions for creating slides in JupyterLab:
+ - [revealjs](/slides/revealjs.slides.html)
 
 Exporting slides from JupyterLab does not work (great) right now.
 It requires some [additional setup](https://github.com/jupyterlab/jupyterlab/issues/4067).
