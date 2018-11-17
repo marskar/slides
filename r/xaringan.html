@@ -1,91 +1,145 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <title></title>
-    <meta charset="utf-8">
-    <meta name="author" content="John Doe" />
-    <meta name="date" content="2005-03-22" />
-    <link href="xaringan_files/remark-css-0.0.1/default.css" rel="stylesheet" />
-    <link href="xaringan_files/remark-css-0.0.1/default-fonts.css" rel="stylesheet" />
-  </head>
-  <body>
-    <textarea id="source">
+---
+title: "First Notebook War"
+subtitle: "PyData DC 2018"
+author: "Martin Skarzynski"
+date: "`r Sys.Date()`"
+output:
+  xaringan::moon_reader:
+    lib_dir: libs
+    nature:
+      highlightStyle: github
+      highlightLines: true
+      countIncrementalSlides: false
+---
 
+```{r setup, include=FALSE}
+options(htmltools.dir.version = FALSE)
+```
 
-# In the morning
+# About me
+
+- Cancer Prevention Fellow 
+  - at National Cancer Institute
+- Co-Chair, Bioinformatics & Data Science
+  - at Foundation for Advanced Education in the Sciences
+- Website: https://marskar.github.io
+- Twitter: [@marskar](https://twitter.com/marskar)
+
+.center[<img src='https://pbs.twimg.com/profile_images/1031975007214346245/vp0tsDy5_400x400.jpg' width='300px'></img>]
 
 ---
 
-## Getting up
+# Title inspired by [a tweet](https://twitter.com/pgbovine/status/1034626381735317504) by [Philip Guo](https://twitter.com/pgbovine)
 
-- Turn off alarm
-- Get out of bed
+.center[<img src='1st-notebook-war-tweet.png' width='500px'></img>]
+
+---
+# Previous conflicts
+
+- Spaces versus Tabs
+- Emacs versus Vim
+
+![Silicon Valley GIF](silicon_valley_spaces_over_tabs_vim_over_emacs_by_digi_matrix-da824de.gif) 
+
+- Source: https://goo.gl/images/U2KpcG
+
+---
+# Spaces versus Tabs
+
+- Code editor setup: Tab = 4 spaces
+- [GNU Make](https://www.gnu.org/software/make/) requires tabs!
+- Use spaces, get paid more!
+  - according to [blog post](https://stackoverflow.blog/2017/06/15/developers-use-spaces-make-money-use-tabs/) by [David Robinson (@drob)'s](https://twitter.com/drob)
+
+.center[<img src='https://zgab33vy595fw5zq-zippykid.netdna-ssl.com/wp-content/uploads/2017/06/salary_graph-1-1400x1000.png}' width='500px'></img>]
+
+
+---
+# Notebooks
+
+[Jupyter notebooks](https://jupyterlab.readthedocs.io/en/stable/user/notebook.html)
+- are data science tools
+- built on IPython by [Fernando Perez (@fperez)](https://twitter.com/fperez)
+- combine [Markdown](https://www.markdownguide.org/) text, code, and output
+- help data scientists communicate goals, methods, and results
+- used in [academia](https://www.oreilly.com/ideas/all-the-cool-kids-are-doing-it-maybe-we-should-too), [Amazon](https://www.oreilly.com/ideas/machine-learning-and-ai-technologies-and-platforms-at-aws),  [Netflix](https://medium.com/netflix-techblog/scheduling-notebooks-348e6c14cfd6), and [PayPal](https://medium.com/paypal-engineering/paypal-notebooks-powered-by-jupyter-fd0067bd00b0)
+
+.center[<img src='https://cdn-images-1.medium.com/max/2000/0*QLer52L9p-T72bGW' width='500px'></img>]
+
+---
+# Joel doesn't like notebooks
+
+- ["I Don't Like Notebooks"](https://conferences.oreilly.com/jupyter/jup-ny/public/schedule/detail/68282) by [Joel Grus (@joelgrus)](https://twitter.com/joelgrus) at Jupytercon 2018
+- [Slides](https://t.co/30peBFwTbv)
+- [Video](https://youtu.be/7jiPeIFXb6U)
+- Modularity and Reusability
+
+![](joel-grus-jupytercon.png)
+
+---
+# Joel also doesn't like vertical slides
+
+![](vertical-slides.png)
+
+---
+# Tim Hopper ([@tdhopper](https://twitter.com/tdhopper)) [likes notebooks](https://t.co/TjofhIRprv)
+
+![](brevity-burn.png)
+
+---
+# DataFramed
+- [Podcast](https://www.datacamp.com/community/podcast) by [Hugo Bowne-Anderson (@hugobowne)](https://twitter.com/hugobowne)
+- [Episode 44](https://soundcloud.com/dataframed/project-jupyter-interactive-computing) with [Brian Granger (@ellisonbg)](https://twitter.com/ellisonbg)
+- [JupyterLab](https://soundcloud.com/dataframed/project-jupyter-interactive-computing)
+![](https://pbs.twimg.com/media/DpUHwwXW4AAGpfU.jpg)
+
+---
+# [Yihui Xie (@xieyihui)](https://twitter.com/xieyihui)'s [Blog post](https://yihui.name/en/2018/09/notebook-war/)
+- I used [R markdown](https://rmarkdown.rstudio.com/) make these slides!
+- No problems with version control
+- [R notebooks](https://rmarkdown.rstudio.com/r_notebooks) are just another output format!
+![](https://user-images.githubusercontent.com/163582/45173275-4fcc4800-b1cd-11e8-8f83-124ce7fac529.png)
 
 ---
 
-## Breakfast
+# Why use notebooks
 
-- Eat eggs
-- Drink coffee
+- [Literate programming](http://www.literateprogramming.com/)
+- Rendered by [GitHub](https://github.com/jupyter/jupyter/wiki/A-gallery-of-interesting-Jupyter-Notebooks) and [nbviewer](http://nbviewer.jupyter.org/)
+- Google [colab](https://colab.research.google.com/)
+- [Kaggle kernels](https://towardsdatascience.com/introduction-to-kaggle-kernels-2ad754ebf77)
+- [Binder](https://mybinder.org/)
 
----
-
-# In the evening
-
----
-
-## Dinner
-
-- Eat spaghetti
-- Drink wine
+![](https://user-images.githubusercontent.com/1510968/34175153-b8a79162-e4fb-11e7-81fe-c4794bc53442.png)
 
 ---
+# Notebook tools
 
-## Going to sleep
+1. version control tool for notebooks - [nbdime](https://nbdime.readthedocs.io/en/latest/)
+2. work with Jupyter notebooks and scripts in parallel using [JupyText](https://github.com/mwouts/jupytext)
+3. configure notebooks to run on markdown (md) files with [notedown](https://github.com/aaren/notedown)
+4. create and run Jupyter notebooks from scripts and md files with [nbless](https://github.com/marskar/nbless)
 
-- Get in bed
-- Count sheep
-    </textarea>
-<script src="https://remarkjs.com/downloads/remark-latest.min.js"></script>
-<script>var slideshow = remark.create();
-if (window.HTMLWidgets) slideshow.on('afterShowSlide', function (slide) {
-  window.dispatchEvent(new Event('resize'));
-});
-(function() {
-  var d = document, s = d.createElement("style"), r = d.querySelector(".remark-slide-scaler");
-  if (!r) return;
-  s.type = "text/css"; s.innerHTML = "@page {size: " + r.style.width + " " + r.style.height +"; }";
-  d.head.appendChild(s);
-})();</script>
+![](https://gist.githubusercontent.com/mwouts/13de42d8bb514e4acf6481c580feffd0/raw/b8dd28f44678f8c91f262da2381276fc4d03b00a/JupyterPyCharm.gif)
 
-<script>
-(function() {
-  var i, text, code, codes = document.getElementsByTagName('code');
-  for (i = 0; i < codes.length;) {
-    code = codes[i];
-    if (code.parentNode.tagName !== 'PRE' && code.childElementCount === 0) {
-      text = code.textContent;
-      if (/^\\\((.|\s)+\\\)$/.test(text) || /^\\\[(.|\s)+\\\]$/.test(text) ||
-          /^\$\$(.|\s)+\$\$$/.test(text) ||
-          /^\\begin\{([^}]+)\}(.|\s)+\\end\{[^}]+\}$/.test(text)) {
-        code.outerHTML = code.innerHTML;  // remove <code></code>
-        continue;
-      }
-    }
-    i++;
-  }
-})();
-</script>
-<!-- dynamically load mathjax for compatibility with self-contained -->
-<script>
-(function () {
-  var script = document.createElement('script');
-  script.type = 'text/javascript';
-  script.src  = 'https://cdn.bootcss.com/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML';
-  if (location.protocol !== 'file:' && /^https?:/.test(script.src))
-    script.src  = script.src.replace(/^https?:/, '');
-  document.getElementsByTagName('head')[0].appendChild(script);
-})();
-</script>
-  </body>
-</html>
+---
+# Write modules!
+
+- [Imports](https://docs.python.org/3/tutorial/modules.html)
+    1. Standard Library
+    2. Third Party
+    3. User Defined
+- Definitions
+    - [Classes](https://docs.python.org/3/tutorial/classes.html)
+    - Functions (for more check out Steven Lott's PyData DC tutorial)
+- [Type Hints](https://docs.python.org/3/library/typing.html)
+- [Docstrings](https://www.datacamp.com/community/tutorials/docstrings-python) (with examples!)
+- [`if __name__ == '__main__':`](https://docs.python.org/3/library/__main__.html)
+- Function call(s), e.g. `doctest.testmod(verbose=True)`
+- [doctest](https://docs.python.org/3/library/doctest.html): docstring examples -> test suite (with [`unittest` API](https://docs.python.org/3/library/doctest.html#unittest-api))
+- run test suite with [`unittest`](https://docs.python.org/3/library/unittest.html) or [`pytest`](https://docs.pytest.org/en/latest/)
+- use [cookiecutter](https://github.com/audreyr/cookiecutter#cookiecutter) for project structure
+- [deploy projects/packages to PyPI](https://packaging.python.org/tutorials/packaging-projects/)
+
+---
+# Thanks for listening!
