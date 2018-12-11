@@ -24,9 +24,9 @@ There are many ways to [install Pandoc](https://pandoc.org/installing.html), but
 Once you have [Anaconda](https://conda.io/docs/glossary.html#anaconda-glossary) or [Miniconda](https://conda.io/docs/glossary.html#miniconda-glossary) installed, you can install [Pandoc](http://pandoc.org/MANUAL.html#producing-slide-shows-with-pandoc) using this command-line command `conda install -yc conda-forge pandoc` and then run the one of the options below:
 
 ```
-pandoc -t dzslides --self-contained -s habits.md -o pandoc/dzslides-pandoc.html
-pandoc -t slidy --self-contained -s habits.md -o pandoc/slidy-pandoc.html
-pandoc -t revealjs -s -o pandoc/revealjs-pandoc.html habits.md -V revealjs-url=https://revealjs.com
+pandoc -t dzslides habits.md -o pandoc/dzslides-pandoc.html --self-contained
+pandoc -t slidy habits.md -o pandoc/slidy-pandoc.html --self-contained
+pandoc -t revealjs habits.md -o pandoc/revealjs-pandoc.html -sV revealjs-url=https://revealjs.com
 ```
 
 Instead of using [Pandoc](http://pandoc.org/MANUAL.html#producing-slide-shows-with-pandoc) in the terminal as described above, you can also install [Pypandoc](https://github.com/bebraw/pypandoc) and convert [Markdown](https://www.markdownguide.org/) to almost any format in your Python environment (e.g. in [PyCharm](https://www.jetbrains.com/pycharm/features/))!
