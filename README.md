@@ -37,9 +37,9 @@ Instead of using [Pandoc](http://pandoc.org/MANUAL.html#producing-slide-shows-wi
 
 ### Examples of HTML slides created using [Pandoc](http://pandoc.org/MANUAL.html#producing-slide-shows-with-pandoc) or [Pypandoc](https://github.com/bebraw/pypandoc):
 
-- [dzslides](/slides/pandoc/dzslides-pandoc.html)
-- [slidy](/slides/pandoc/slidy-pandoc.html)
-- [revealjs](/slides/pandoc/revealjs-pandoc.html)
+- [dzslides](https://marskar.github.io/slides/pandoc/dzslides-pandoc.html)
+- [slidy](https://marskar.github.io/slides/pandoc/slidy-pandoc.html)
+- [revealjs](https://marskar.github.io/slides/pandoc/revealjs-pandoc.html)
 
 ## Knit slides from md or Rmd to HTML in [RStudio](https://rmarkdown.rstudio.com/lesson-11.html) or from the command-line
 
@@ -70,10 +70,10 @@ Rscript -e "rmarkdown::render('xaringan.Rmd', output_file = 'r/xaringan.html')"
 ```
 
 ### Examples of HTML slides created using [RStudio](https://www.rstudio.com/products/rstudio/download/) or the [rmarkdown R package](https://github.com/rstudio/rmarkdown):
-- [ioslides](/slides/r/ioslides-r.html)
-- [slidy](/slides/r/slidy-r.html)
-- [revealjs](/slides/r/revealjs-r.html)
-- [xaringan](/slides/r/xaringan.html)
+- [ioslides](https://marskar.github.io/slides/r/ioslides-r.html)
+- [slidy](https://marskar.github.io/slides/r/slidy-r.html)
+- [revealjs](https://marskar.github.io/slides/r/revealjs-r.html)
+- [xaringan](https://marskar.github.io/slides/r/xaringan-r.html)
 
 ## Create HTML slides from ipynb using [nbconvert](https://nbconvert.readthedocs.io/en/latest/) from the command-line
 
@@ -86,16 +86,12 @@ url="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.5.0"
 jupyter nbconvert revealjs.ipynb --to slides --reveal-prefix=$url
 ```
 
-### An example with instructions for creating slides in JupyterLab:
- - [revealjs](/slides/revealjs.slides.html)
+### An example with instructions for creating slides using JupyterLab:
+ - [revealjs](https://marskar.github.io/slides/revealjs.slides.html)
 
-Exporting slides from JupyterLab does not work (great) right now.
-It requires some [additional setup](https://github.com/jupyterlab/jupyterlab/issues/4067).
-I would not recommend trying it until the next version of `jupyter nbconvert` comes out.
-
-Luckily, there are other ways to make slides from a Jupyter Notebook.
+There are other ways to make slides from a Jupyter Notebook.
 
 1. The easiest way is to use [nbviewer](https://nbviewer.jupyter.org/), so that you can switch between [notebook](http://nbviewer.jupyter.org/github/marskar/biof309_spring2018/blob/master/slides.ipynb) and [slide view](http://nbviewer.jupyter.org/format/slides/github/marskar/biof309_spring2018/blob/master/slides.ipynb).
-2. Another approach is to use [binder for interactive notebooks/slideshows](https://mybinder.org/v2/gh/mgeier/jupyter-presentation/master?filepath=jupyter-presentation.ipynb).
+2. Another approach is to use [Binder for interactive notebooks/slideshows](https://mybinder.org/v2/gh/mgeier/jupyter-presentation/master?filepath=jupyter-presentation.ipynb).
 
 These two options are not the same as [creating an html slideshow from a jupyter notebook and hosting it on your website](https://marskar.github.io/jupyter-notebook-slides), but they get the job done.

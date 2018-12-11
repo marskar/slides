@@ -26,6 +26,7 @@ Once you have [Anaconda](https://conda.io/docs/glossary.html#anaconda-glossary) 
 ```
 pandoc -t dzslides --self-contained -s habits.md -o pandoc/dzslides-pandoc.html
 pandoc -t slidy --self-contained -s habits.md -o pandoc/slidy-pandoc.html
+pandoc -t revealjs -s -o pandoc/revealjs-pandoc.html habits.md -V revealjs-url=https://revealjs.com
 ```
 
 Instead of using [Pandoc](http://pandoc.org/MANUAL.html#producing-slide-shows-with-pandoc) in the terminal as described above, you can also install [Pypandoc](https://github.com/bebraw/pypandoc) and convert [Markdown](https://www.markdownguide.org/) to almost any format in your Python environment (e.g. in [PyCharm](https://www.jetbrains.com/pycharm/features/))!
@@ -38,6 +39,7 @@ Instead of using [Pandoc](http://pandoc.org/MANUAL.html#producing-slide-shows-wi
 
 - [dzslides](/slides/pandoc/dzslides-pandoc.html)
 - [slidy](/slides/pandoc/slidy-pandoc.html)
+- [revealjs](/slides/pandoc/revealjs-pandoc.html)
 
 ## Knit slides from md or Rmd to HTML in [RStudio](https://rmarkdown.rstudio.com/lesson-11.html) or from the command-line
 
@@ -87,13 +89,9 @@ jupyter nbconvert revealjs.ipynb --to slides --reveal-prefix=$url
 ### An example with instructions for creating slides in JupyterLab:
  - [revealjs](/slides/revealjs.slides.html)
 
-Exporting slides from JupyterLab does not work (great) right now.
-It requires some [additional setup](https://github.com/jupyterlab/jupyterlab/issues/4067).
-I would not recommend trying it until the next version of `jupyter nbconvert` comes out.
-
-Luckily, there are other ways to make slides from a Jupyter Notebook.
+There are other ways to make slides from a Jupyter Notebook.
 
 1. The easiest way is to use [nbviewer](https://nbviewer.jupyter.org/), so that you can switch between [notebook](http://nbviewer.jupyter.org/github/marskar/biof309_spring2018/blob/master/slides.ipynb) and [slide view](http://nbviewer.jupyter.org/format/slides/github/marskar/biof309_spring2018/blob/master/slides.ipynb).
-2. Another approach is to use [binder for interactive notebooks/slideshows](https://mybinder.org/v2/gh/mgeier/jupyter-presentation/master?filepath=jupyter-presentation.ipynb).
+2. Another approach is to use [Binder for interactive notebooks/slideshows](https://mybinder.org/v2/gh/mgeier/jupyter-presentation/master?filepath=jupyter-presentation.ipynb).
 
 These two options are not the same as [creating an html slideshow from a jupyter notebook and hosting it on your website](https://marskar.github.io/jupyter-notebook-slides), but they get the job done.
