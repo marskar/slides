@@ -85,6 +85,11 @@ If you have [Anaconda](https://conda.io/docs/glossary.html#anaconda-glossary) in
 url="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.5.0"
 jupyter nbconvert revealjs.ipynb --to slides --reveal-prefix=$url
 ```
+Or
+
+```
+jupyter nbconvert revealjs.ipynb --to slides --reveal-prefix="https://revealjs.com"
+```
 
 ### An example with instructions for creating slides using JupyterLab:
  - [revealjs](https://marskar.github.io/slides/revealjs.slides.html)
