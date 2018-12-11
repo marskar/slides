@@ -26,6 +26,7 @@ Once you have [Anaconda](https://conda.io/docs/glossary.html#anaconda-glossary) 
 ```
 pandoc -t dzslides --self-contained -s habits.md -o pandoc/dzslides-pandoc.html
 pandoc -t slidy --self-contained -s habits.md -o pandoc/slidy-pandoc.html
+pandoc -t revealjs -s -o pandoc/revealjs-pandoc.html habits.md -V revealjs-url=https://revealjs.com
 ```
 
 Instead of using [Pandoc](http://pandoc.org/MANUAL.html#producing-slide-shows-with-pandoc) in the terminal as described above, you can also install [Pypandoc](https://github.com/bebraw/pypandoc) and convert [Markdown](https://www.markdownguide.org/) to almost any format in your Python environment (e.g. in [PyCharm](https://www.jetbrains.com/pycharm/features/))!
@@ -38,6 +39,7 @@ Instead of using [Pandoc](http://pandoc.org/MANUAL.html#producing-slide-shows-wi
 
 - [dzslides](/slides/pandoc/dzslides-pandoc.html)
 - [slidy](/slides/pandoc/slidy-pandoc.html)
+- [revealjs](/slides/pandoc/revealjs-pandoc.html)
 
 ## Knit slides from md or Rmd to HTML in [RStudio](https://rmarkdown.rstudio.com/lesson-11.html) or from the command-line
 
