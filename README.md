@@ -91,12 +91,20 @@ Or
 jupyter nbconvert revealjs.ipynb --to slides --reveal-prefix="https://revealjs.com"
 ```
 
+Another way to create slides is to open the Jupyter Notebook in JupyterLab
+and follow the instructions in this example slide deck:
+
 ### An example with instructions for creating slides using JupyterLab:
+
  - [revealjs](https://marskar.github.io/slides/revealjs.slides.html)
 
-There are other ways to make slides from a Jupyter Notebook.
+Both of the methods above should give the same result: a revealjs html slideshow file.
+
+There are other ways to make slides from a Jupyter Notebook that do not involve making an html file.
 
 1. The easiest way is to use [nbviewer](https://nbviewer.jupyter.org/), so that you can switch between [notebook](http://nbviewer.jupyter.org/github/marskar/biof309_spring2018/blob/master/slides.ipynb) and [slide view](http://nbviewer.jupyter.org/format/slides/github/marskar/biof309_spring2018/blob/master/slides.ipynb).
-2. Another approach is to use [Binder for interactive notebooks/slideshows](https://mybinder.org/v2/gh/mgeier/jupyter-presentation/master?filepath=jupyter-presentation.ipynb).
+2. Another approach is to use [Binder](https://mybinder.org/) and the [RISE extension](https://github.com/damianavila/RISE#rise) for interactive notebook slideshows as in these two examples:
+    - [by RISE creator Damian Avila](https://mybinder.org/v2/gh/damianavila/RISE/master?filepath=examples%2FREADME.ipynb)
+    - [by Matthias Geier](https://mybinder.org/v2/gh/mgeier/jupyter-presentation/master?filepath=jupyter-presentation.ipynb).
 
-These two options are not the same as [creating an html slideshow from a jupyter notebook and hosting it on your website](https://marskar.github.io/jupyter-notebook-slides), but they get the job done.
+These two options are not the same as [creating an html slideshow from a Jupyter Notebook and hosting it on your website](https://marskar.github.io/jupyter-notebook-slides), but they get the job done.
