@@ -100,7 +100,7 @@ and follow the instructions in this example slide deck:
 
 Both of the methods above should give the same result: a revealjs html slideshow file.
 
-There are other ways to make slides from a Jupyter Notebook that do not involve making an html file.
+### View Jupyter Notebook slides without making an html file
 
 1. The easiest way is to use [nbviewer](https://nbviewer.jupyter.org/), so that you can switch between [notebook](http://nbviewer.jupyter.org/github/marskar/biof309_spring2018/blob/master/slides.ipynb) and [slide view](http://nbviewer.jupyter.org/format/slides/github/marskar/biof309_spring2018/blob/master/slides.ipynb).
 2. Another approach is to use [Binder](https://mybinder.org/) and the [RISE extension](https://github.com/damianavila/RISE#rise) for interactive notebook slideshows as in these two examples:
