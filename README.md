@@ -73,7 +73,7 @@ Rscript -e "rmarkdown::render('xaringan.Rmd', output_file = 'r/xaringan.html')"
 - [ioslides](https://marskar.github.io/slides/r/ioslides-r.html)
 - [slidy](https://marskar.github.io/slides/r/slidy-r.html)
 - [revealjs](https://marskar.github.io/slides/r/revealjs-r.html)
-- [xaringan](https://marskar.github.io/slides/r/xaringan-r.html)
+- [xaringan](https://marskar.github.io/slides/r/xaringan.html)
 
 ## Create HTML slides from ipynb using [nbconvert](https://nbconvert.readthedocs.io/en/latest/) from the command-line
 
