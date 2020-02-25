@@ -82,13 +82,7 @@ You can also create slides from a Jupyter Notebook using `jupyter nbconvert`.
 If you have [Anaconda](https://conda.io/docs/glossary.html#anaconda-glossary) installed, you should already be able to run `jupyter nbconvert`, but if you are using [Miniconda](https://conda.io/docs/glossary.html#miniconda-glossary) you will need to install `nbconvert` by running `conda install -yc conda-forge jupyter nbconvert`.
 
 ```
-url="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.5.0"
-jupyter nbconvert revealjs.ipynb --to slides --reveal-prefix=$url
-```
-Or
-
-```
-jupyter nbconvert revealjs.ipynb --to slides --reveal-prefix="https://revealjs.com"
+jupyter nbconvert revealjs.ipynb --to slides
 ```
 
 Another way to create slides is to open the Jupyter Notebook in JupyterLab
